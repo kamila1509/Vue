@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-     <div> 
-      <Photo/>
-      <h1>Welcome to my Page</h1>
+     <div class="home-container flexbox"> 
+    <Photo/>
+      <h1 class="home-title">Welcome to my Page!</h1>
     </div>
   </div>
 </template>
@@ -18,3 +18,17 @@ export default {
   }
 }
 </script>
+<style lang="less" scoped>
+.flexbox{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home-title{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 50px;
+  margin-left: 20px;
+}
+</style>

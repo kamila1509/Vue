@@ -1,19 +1,27 @@
 <template>
-    <div>
+    <div class="photo">
         <div class="photo-profile">
-        <img src="../assets/profile.jpeg">
+        <img src="../assets/lilo.jpeg">
         </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'Photo'
+  name: 'Photo',
+  props:{
+    location: String
+  }
+
  
 }
 </script>
 
 <style lang="less" scoped>
+.photo{
+    display: inline-block;
+    margin-right: 20px;
+}
 .photo-corners (@radius: 50%){
     border-radius: @radius;
     width: 300px;
