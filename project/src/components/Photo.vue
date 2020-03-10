@@ -19,7 +19,9 @@ export default {
 
 <style lang="less" scoped>
 .photo{
-    display: inline-block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 20px;
 }
 .photo-corners (@radius: 50%){
