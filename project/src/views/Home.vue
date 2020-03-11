@@ -1,13 +1,12 @@
 <template>
-  <div class="home full-height">
+  <div class="home">
    <transition :name="transitionName.body" appear>
     <div class="home-container full-height flexbox"> 
       <Photo/>
       <div class="home-title">
         <h1 >I'm Camila!</h1>
-      <h2> a Front-End Developer</h2>
+        <h2> a Front-End Developer</h2>
       </div>
-      
     </div>
     </transition>
   </div>

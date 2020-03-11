@@ -2,8 +2,8 @@
   <div id="app">
     <div class="nav">
       <router-link to="/">Home</router-link> 
-      <router-link to="/about">About</router-link> 
-      <router-link to="/work">Work</router-link>
+      <router-link to="/about">Who I am </router-link> 
+      <router-link to="/work">I'd like to</router-link>
     </div>
     <router-view/>
   </div>
@@ -85,7 +85,7 @@
   -moz-osx-font-smoothing: grayscale;
   background-image:url("back.jpg");
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   text-align: center;
   color: #2c3e50;
 }
@@ -101,9 +101,10 @@
     margin-right: 30px;
     font-size: 30px;
     text-decoration: none;
-
+    transition:0.2s;
     &.router-link-exact-active {
       color: #e4515e;
+      transform: translateY(-5px);
     }
   }
 }
